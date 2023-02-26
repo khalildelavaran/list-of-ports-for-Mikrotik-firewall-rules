@@ -12108,20 +12108,21 @@ oa-system          8022        tcp    oa-system                    [Marie_France
 oa-system          8022        udp    oa-system                    [Marie_France_Dubreui]                                [Marie_France_Dubreui]
 arca-api           8023        tcp    ARCATrust vault API          [ARCATrust_SA]                                        [Yacince_Felk]                                            2018-07-05
 arca-api           8023        udp    ARCATrust vault API          [ARCATrust_SA]                                        [Yacince_Felk]                                            2018-07-05
-                   8024               Unassigned
-ca-audit-da        8025        tcp    CA Audit Distribution Agent  [Henning_Smith]                                       [Henning_Smith]                                           2006-07
-ca-audit-da        8025        udp    CA Audit Distribution Agent  [Henning_Smith]                                       [Henning_Smith]                                           2006-07
-ca-audit-ds        8026        tcp    CA Audit Distribution Server [Henning_Smith]                                       [Henning_Smith]                                           2006-07
-ca-audit-ds        8026        udp    CA Audit Distribution Server [Henning_Smith]                                       [Henning_Smith]                                           2006-07
-                 8027-8031            Unassigned
-pro-ed             8032        tcp    ProEd
-pro-ed             8032        udp    ProEd
-mindprint          8033        tcp    MindPrint                    [Larry_Tusoni]                                        [Larry_Tusoni]
-mindprint          8033        udp    MindPrint                    [Larry_Tusoni]                                        [Larry_Tusoni]
-vantronix-mgmt     8034        tcp    .vantronix Management        [Reyk_Floeter]                                        [Reyk_Floeter]                                            2008-02-27
-vantronix-mgmt     8034        udp    .vantronix Management        [Reyk_Floeter]                                        [Reyk_Floeter]                                            2008-02-27
+
+add chain=forward action=drop protocol=tcp dst-port=8024 in-interface-list=LAN comment="Unassigned"		 
+add chain=forward action=drop protocol=udp dst-port=8024 in-interface-list=LAN comment="Unassigned"
+add chain=forward action=accept protocol=tcp dst-port=8025 in-interface-list=LAN comment="ca-audit-da, CA Audit Distribution Agent"
+add chain=forward action=accept protocol=udp dst-port=8025 in-interface-list=LAN comment="ca-audit-da, CA Audit Distribution Agent"
+add chain=forward action=accept protocol=tcp dst-port=8026 in-interface-list=LAN comment="ca-audit-ds, CA Audit Distribution Server"
+add chain=forward action=accept protocol=udp dst-port=8026 in-interface-list=LAN comment="ca-audit-ds, CA Audit Distribution Server"
+add chain=forward action=drop protocol=tcp dst-port=8027-8031 in-interface-list=LAN comment="Unassigned"		 
+add chain=forward action=drop protocol=udp dst-port=8027-8031 in-interface-list=LAN comment="Unassigned"
+add chain=forward action=accept protocol=tcp dst-port=8032 in-interface-list=LAN comment="pro-ed, ProEd"
+add chain=forward action=accept protocol=udp dst-port=8032 in-interface-list=LAN comment="pro-ed, ProEd"
+add chain=forward action=accept protocol=tcp dst-port=8033 in-interface-list=LAN comment="mindprint, MindPrint"
+add chain=forward action=accept protocol=udp dst-port=8033 in-interface-list=LAN comment="mindprint, MindPrint"
 add chain=forward action=accept protocol=tcp dst-port=8034 in-interface-list=LAN comment="vantronix-mgmt, vantronix Management"
-add chain=forward action=accept protocol=udp dst-port=8035-8039 in-interface-list=LAN comment="vantronix-mgmt, vantronix Management"
+add chain=forward action=accept protocol=udp dst-port=8034 in-interface-list=LAN comment="vantronix-mgmt, vantronix Management"
 add chain=forward action=drop protocol=tcp dst-port=8035-8039 in-interface-list=LAN comment="Unassigned"		 
 add chain=forward action=drop protocol=udp dst-port=8035-8039 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=8040 in-interface-list=LAN comment="ampify, Ampify Messaging Protocol"
