@@ -39,8 +39,8 @@ add chain=forward action=accept protocol=tcp dst-port=24 in-interface-list=LAN c
 add chain=forward action=accept protocol=udp dst-port=24 in-interface-list=LAN comment="any private mail system"
 add chain=forward action=accept protocol=tcp dst-port=25 in-interface-list=LAN comment="smtp, Simple Mail Transfer"                         
 add chain=forward action=accept protocol=udp dst-port=25 in-interface-list=LAN comment="smtp, Simple Mail Transfer"                                             
-add chain=forward action=accept protocol=tcp dst-port=27 in-interface-list=LAN comment="nsw-fe, NSW User System FE"                                                    
-add chain=forward action=accept protocol=udp dst-port=27 in-interface-list=LAN comment="nsw-fe, NSW User System FE"                                                         
+add chain=forward action=accept protocol=tcp dst-port=27 in-interface-list=LAN comment="nsw-fe, NSW User System FE"                                                   
+add chain=forward action=accept protocol=udp dst-port=27 in-interface-list=LAN comment="nsw-fe, NSW User System FE"                                                   
 add chain=forward action=accept protocol=tcp dst-port=29 in-interface-list=LAN comment="msg-icp, MSG ICP"                     
 add chain=forward action=accept protocol=udp dst-port=29 in-interface-list=LAN comment="msg-icp, MSG ICP"                                      
 add chain=forward action=accept protocol=tcp dst-port=31 in-interface-list=LAN comment="msg-auth, MSG Authentication"                    
@@ -70,23 +70,23 @@ add chain=forward action=accept protocol=udp dst-port=46 in-interface-list=LAN c
 add chain=forward action=accept protocol=tcp dst-port=48 in-interface-list=LAN comment="auditd, Digital Audit Daemon"
 add chain=forward action=accept protocol=udp dst-port=48 in-interface-list=LAN comment="auditd, Digital Audit Daemon"
 add chain=forward action=accept protocol=tcp dst-port=49 in-interface-list=LAN comment="tacacs, Login Host Protocol (TACACS)"                                    
-add chain=forward action=accept protocol=udp dst-port=49 in-interface-list=LAN comment="tacacs, Login Host Protocol (TACACS)"                                                                                                                          
-add chain=forward action=accept protocol=tcp dst-port=50 in-interface-list=LAN comment="re-mail-ck, Remote Mail Checking Protocol"																														 
+add chain=forward action=accept protocol=udp dst-port=49 in-interface-list=LAN comment="tacacs, Login Host Protocol (TACACS)"     
+add chain=forward action=accept protocol=tcp dst-port=50 in-interface-list=LAN comment="re-mail-ck, Remote Mail Checking Protocol"	
 add chain=forward action=accept protocol=udp dst-port=50 in-interface-list=LAN comment="re-mail-ck, Remote Mail Checking Protocol"
-add chain=forward action=accept protocol=tcp dst-port=52 in-interface-list=LAN comment="xns-time, XNS Time Protocol"																														 
-add chain=forward action=accept protocol=udp dst-port=52 in-interface-list=LAN comment="xns-time, XNS Time Protocol"																															 
-add chain=forward action=accept protocol=tcp dst-port=53 in-interface-list=LAN comment="domain, Domain Name Server (DNS)"																														 
-add chain=forward action=accept protocol=udp dst-port=53 in-interface-list=LAN comment="domain, Domain Name Server (DNS)"																														 
-add chain=forward action=accept protocol=tcp dst-port=54 in-interface-list=LAN comment="xns-ch, XNS Clearinghouse"																														 
-add chain=forward action=accept protocol=udp dst-port=54 in-interface-list=LAN comment="xns-ch, XNS Clearinghouse"																														 
-add chain=forward action=accept protocol=tcp dst-port=55 in-interface-list=LAN comment="isi-gl, ISI Graphics Language"                                                                                                                                  
-add chain=forward action=accept protocol=udp dst-port=55 in-interface-list=LAN comment="isi-gl, ISI Graphics Language" 																																  
-add chain=forward action=accept protocol=tcp dst-port=56 in-interface-list=LAN comment="xns-auth, XNS Authentication"																															  
-add chain=forward action=accept protocol=udp dst-port=56 in-interface-list=LAN comment="xns-auth, XNS Authentication"																															  
-add chain=forward action=accept protocol=tcp dst-port=57 in-interface-list=LAN comment="any private terminal access"																																  
-add chain=forward action=accept protocol=udp dst-port=57 in-interface-list=LAN comment="any private terminal access"																																  
-add chain=forward action=accept protocol=tcp dst-port=58 in-interface-list=LAN comment="xns-mail, XNS Mail"																																  
-add chain=forward action=accept protocol=udp dst-port=58 in-interface-list=LAN comment="any private file service"																																		  
+add chain=forward action=accept protocol=tcp dst-port=52 in-interface-list=LAN comment="xns-time, XNS Time Protocol"
+add chain=forward action=accept protocol=udp dst-port=52 in-interface-list=LAN comment="xns-time, XNS Time Protocol"	
+add chain=forward action=accept protocol=tcp dst-port=53 in-interface-list=LAN comment="domain, Domain Name Server (DNS)"
+add chain=forward action=accept protocol=udp dst-port=53 in-interface-list=LAN comment="domain, Domain Name Server (DNS)"
+add chain=forward action=accept protocol=tcp dst-port=54 in-interface-list=LAN comment="xns-ch, XNS Clearinghouse"
+add chain=forward action=accept protocol=udp dst-port=54 in-interface-list=LAN comment="xns-ch, XNS Clearinghouse"	
+add chain=forward action=accept protocol=tcp dst-port=55 in-interface-list=LAN comment="isi-gl, ISI Graphics Language" 
+add chain=forward action=accept protocol=udp dst-port=55 in-interface-list=LAN comment="isi-gl, ISI Graphics Language" 	
+add chain=forward action=accept protocol=tcp dst-port=56 in-interface-list=LAN comment="xns-auth, XNS Authentication"	
+add chain=forward action=accept protocol=udp dst-port=56 in-interface-list=LAN comment="xns-auth, XNS Authentication"
+add chain=forward action=accept protocol=tcp dst-port=57 in-interface-list=LAN comment="any private terminal access"	
+add chain=forward action=accept protocol=udp dst-port=57 in-interface-list=LAN comment="any private terminal access"
+add chain=forward action=accept protocol=tcp dst-port=58 in-interface-list=LAN comment="xns-mail, XNS Mail"	
+add chain=forward action=accept protocol=udp dst-port=58 in-interface-list=LAN comment="any private file service"
 add chain=forward action=accept protocol=tcp dst-port=59 in-interface-list=LAN comment="any private file service"	
 add chain=forward action=accept protocol=tcp dst-port=62 in-interface-list=LAN comment="acas, ACA Services, whois++"	
 add chain=forward action=accept protocol=udp dst-port=62 in-interface-list=LAN comment="acas, ACA Services, whois++"	
@@ -94,16 +94,16 @@ add chain=forward action=accept protocol=tcp dst-port=63 in-interface-list=LAN c
 add chain=forward action=accept protocol=udp dst-port=63 in-interface-list=LAN comment="whoispp, whois++" 
 add chain=forward action=accept protocol=tcp dst-port=64 in-interface-list=LAN comment="covia, Communications Integrator(CI)"                    
 add chain=forward action=accept protocol=udp dst-port=64 in-interface-list=LAN comment="covia, Communications Integrator(CI)" 
-add chain=forward action=accept protocol=tcp dst-port=65 in-interface-list=LAN comment="tacacs-ds, TACACS-Database Service"                                                                                                                                      
-add chain=forward action=accept protocol=udp dst-port=65 in-interface-list=LAN comment="tacacs-ds, TACACS-Database Service, Oracle SQL*NET" 																																	  
-add chain=forward action=accept protocol=tcp dst-port=66 in-interface-list=LAN comment="sql-net,sql*net, Oracle SQL*NET"  																																	  
-add chain=forward action=accept protocol=udp dst-port=66 in-interface-list=LAN comment="sql-net,sql*net, Oracle SQL*NET"																									 								  
-add chain=forward action=accept protocol=tcp dst-port=67 in-interface-list=LAN comment="bootps, Bootstrap Protocol Server"																																	  
-add chain=forward action=accept protocol=udp dst-port=67 in-interface-list=LAN comment="bootps, Bootstrap Protocol Server"																																	  
-add chain=forward action=accept protocol=tcp dst-port=68 in-interface-list=LAN comment="bootpc, Bootstrap Protocol Client"																																	  
-add chain=forward action=accept protocol=udp dst-port=68 in-interface-list=LAN comment="bootpc, Bootstrap Protocol Client"																																	  
-add chain=forward action=accept protocol=tcp dst-port=69 in-interface-list=LAN comment="tftp, Trivial File Transfer"																																	  
-add chain=forward action=accept protocol=udp dst-port=69 in-interface-list=LAN comment="tftp, Trivial File Transfer"																																	  
+add chain=forward action=accept protocol=tcp dst-port=65 in-interface-list=LAN comment="tacacs-ds, TACACS-Database Service"      
+add chain=forward action=accept protocol=udp dst-port=65 in-interface-list=LAN comment="tacacs-ds, TACACS-Database Service, Oracle SQL*NET" 	
+add chain=forward action=accept protocol=tcp dst-port=66 in-interface-list=LAN comment="sql-net,sql*net, Oracle SQL*NET"  	
+add chain=forward action=accept protocol=udp dst-port=66 in-interface-list=LAN comment="sql-net,sql*net, Oracle SQL*NET"	
+add chain=forward action=accept protocol=tcp dst-port=67 in-interface-list=LAN comment="bootps, Bootstrap Protocol Server"	
+add chain=forward action=accept protocol=udp dst-port=67 in-interface-list=LAN comment="bootps, Bootstrap Protocol Server"	
+add chain=forward action=accept protocol=tcp dst-port=68 in-interface-list=LAN comment="bootpc, Bootstrap Protocol Client"	
+add chain=forward action=accept protocol=udp dst-port=68 in-interface-list=LAN comment="bootpc, Bootstrap Protocol Client"	
+add chain=forward action=accept protocol=tcp dst-port=69 in-interface-list=LAN comment="tftp, Trivial File Transfer"		
+add chain=forward action=accept protocol=udp dst-port=69 in-interface-list=LAN comment="tftp, Trivial File Transfer"	
 add chain=forward action=accept protocol=tcp dst-port=70 in-interface-list=LAN comment="gopher, Gopher"
 add chain=forward action=accept protocol=udp dst-port=70 in-interface-list=LAN comment="gopher, Gopher"
 add chain=forward action=accept protocol=tcp dst-port=71 in-interface-list=LAN comment="netrjs-1, Remote Job Service"
@@ -169,23 +169,23 @@ add chain=forward action=accept protocol=tcp dst-port=102 in-interface-list=LAN 
 add chain=forward action=accept protocol=udp dst-port=102 in-interface-list=LAN comment="iso-tsap, ISO-TSAP Class 0"
 add chain=forward action=accept protocol=tcp dst-port=103 in-interface-list=LAN comment="gppitnp, Genesis Point-to-Point Trans Net"
 add chain=forward action=accept protocol=udp dst-port=103 in-interface-list=LAN comment="gppitnp, Genesis Point-to-Point Trans Net"
-add chain=forward action=accept protocol=tcp dst-port=104 in-interface-list=LAN comment="acr-nema, ACR-NEMA Digital Imag. & Comm. 300"                                                                             
+add chain=forward action=accept protocol=tcp dst-port=104 in-interface-list=LAN comment="acr-nema, ACR-NEMA Digital Imag. & Comm. 300"       
 add chain=forward action=accept protocol=udp dst-port=104 in-interface-list=LAN comment="acr-nema, ACR-NEMA Digital Imag. & Comm. 300"
-add chain=forward action=accept protocol=tcp dst-port=105 in-interface-list=LAN comment="cso, CCSO name server protocol"																				 
-add chain=forward action=accept protocol=udp dst-port=105 in-interface-list=LAN comment="cso, CCSO name server protocol"																				 
-add chain=forward action=accept protocol=tcp dst-port=106 in-interface-list=LAN comment="3com-tsmux, 3COM-TSMUX"																				 
-add chain=forward action=accept protocol=udp dst-port=106 in-interface-list=LAN comment="3com-tsmux, 3COM-TSMUX"																				 
+add chain=forward action=accept protocol=tcp dst-port=105 in-interface-list=LAN comment="cso, CCSO name server protocol"
+add chain=forward action=accept protocol=udp dst-port=105 in-interface-list=LAN comment="cso, CCSO name server protocol"	
+add chain=forward action=accept protocol=tcp dst-port=106 in-interface-list=LAN comment="3com-tsmux, 3COM-TSMUX"	
+add chain=forward action=accept protocol=udp dst-port=106 in-interface-list=LAN comment="3com-tsmux, 3COM-TSMUX"
 add chain=forward action=accept protocol=tcp dst-port=107 in-interface-list=LAN comment="rtelnet, Remote Telnet Service"
-add chain=forward action=accept protocol=udp dst-port=107 in-interface-list=LAN comment="rtelnet, Remote Telnet Service"																				 
-add chain=forward action=accept protocol=tcp dst-port=108 in-interface-list=LAN comment="snagas, A Gateway Access Server"																				 
+add chain=forward action=accept protocol=udp dst-port=107 in-interface-list=LAN comment="rtelnet, Remote Telnet Service"	
+add chain=forward action=accept protocol=tcp dst-port=108 in-interface-list=LAN comment="snagas, A Gateway Access Server"	
 add chain=forward action=accept protocol=udp dst-port=108 in-interface-list=LAN comment="snagas, A Gateway Access Server"
-add chain=forward action=accept protocol=tcp dst-port=109 in-interface-list=LAN comment="pop2, Post Office Protocol Version 2"																				 
-add chain=forward action=accept protocol=udp dst-port=109 in-interface-list=LAN comment="pop2, Post Office Protocol Version 2"																				 
+add chain=forward action=accept protocol=tcp dst-port=109 in-interface-list=LAN comment="pop2, Post Office Protocol Version 2"		
+add chain=forward action=accept protocol=udp dst-port=109 in-interface-list=LAN comment="pop2, Post Office Protocol Version 2"		
 add chain=forward action=accept protocol=tcp dst-port=110 in-interface-list=LAN comment="pop3, Post Office Protocol Version 3"
-add chain=forward action=accept protocol=udp dst-port=110 in-interface-list=LAN comment="pop3, Post Office Protocol Version 3"																				 
+add chain=forward action=accept protocol=udp dst-port=110 in-interface-list=LAN comment="pop3, Post Office Protocol Version 3"	
 add chain=forward action=accept protocol=tcp dst-port=111 in-interface-list=LAN comment="sunrpc, UN Remote Procedure Call"					
 add chain=forward action=accept protocol=udp dst-port=111 in-interface-list=LAN comment="sunrpc, UN Remote Procedure Call"					
-add chain=forward action=accept protocol=tcp dst-port=112 in-interface-list=LAN comment="mcidas, McIDAS Data Transmission Protocol"					
+add chain=forward action=accept protocol=tcp dst-port=112 in-interface-list=LAN comment="mcidas, McIDAS Data Transmission Protocol"		
 add chain=forward action=accept protocol=tcp dst-port=112 in-interface-list=LAN comment="mcidas, McIDAS Data Transmission Protocol"		
 add chain=forward action=accept protocol=tcp dst-port=113 in-interface-list=LAN comment="ident, auth, Authentication Service"		
 add chain=forward action=accept protocol=tcp dst-port=113 in-interface-list=LAN comment="auth, Authentication Service"		
@@ -202,12 +202,12 @@ add chain=forward action=accept protocol=udp dst-port=119 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=120 in-interface-list=LAN comment="cfdptkt, CFDPTKT"		
 add chain=forward action=accept protocol=udp dst-port=120 in-interface-list=LAN comment="cfdptkt, CFDPTKT"		
 add chain=forward action=accept protocol=tcp dst-port=121 in-interface-list=LAN comment="erpc, Encore Expedited Remote Pro.Call"		
-add chain=forward action=accept protocol=udp dst-port=121 in-interface-list=LAN comment="erpc, Encore Expedited Remote Pro.Call"                                                                                                                      
-add chain=forward action=accept protocol=tcp dst-port=122 in-interface-list=LAN comment="smakynet, SMAKYNET"																													  
-add chain=forward action=accept protocol=udp dst-port=122 in-interface-list=LAN comment="smakynet, SMAKYNET"																													  
-add chain=forward action=accept protocol=tcp dst-port=123 in-interface-list=LAN comment="ntp, Network Time Protocol"																													  
-add chain=forward action=accept protocol=udp dst-port=123 in-interface-list=LAN comment="ntp, Network Time Protocol"																													  
-add chain=forward action=accept protocol=tcp dst-port=124 in-interface-list=LAN comment="ansatrader, ANSA REX Trader"																													  
+add chain=forward action=accept protocol=udp dst-port=121 in-interface-list=LAN comment="erpc, Encore Expedited Remote Pro.Call"      
+add chain=forward action=accept protocol=tcp dst-port=122 in-interface-list=LAN comment="smakynet, SMAKYNET"		
+add chain=forward action=accept protocol=udp dst-port=122 in-interface-list=LAN comment="smakynet, SMAKYNET"	
+add chain=forward action=accept protocol=tcp dst-port=123 in-interface-list=LAN comment="ntp, Network Time Protocol"	
+add chain=forward action=accept protocol=udp dst-port=123 in-interface-list=LAN comment="ntp, Network Time Protocol"	
+add chain=forward action=accept protocol=tcp dst-port=124 in-interface-list=LAN comment="ansatrader, ANSA REX Trader"		
 add chain=forward action=accept protocol=udp dst-port=124 in-interface-list=LAN comment="ansatrader, ANSA REX Trader"		
 add chain=forward action=accept protocol=tcp dst-port=125 in-interface-list=LAN comment="locus-map, Locus PC-Interface Net Map Ser"	
 add chain=forward action=accept protocol=udp dst-port=125 in-interface-list=LAN comment="locus-map, Locus PC-Interface Net Map Ser"		
@@ -503,11 +503,11 @@ add chain=forward action=accept protocol=udp dst-port=318 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=319 in-interface-list=LAN comment="ptp-event, PTP Event"
 add chain=forward action=accept protocol=udp dst-port=319 in-interface-list=LAN comment="ptp-event, PTP Event"
 add chain=forward action=accept protocol=tcp dst-port=320 in-interface-list=LAN comment="ptp-general, PTP General"
-add chain=forward action=accept protocol=udp dst-port=320 in-interface-list=LAN comment="ptp-general, PTP General"										   
+add chain=forward action=accept protocol=udp dst-port=320 in-interface-list=LAN comment="ptp-general, PTP General"		
 add chain=forward action=accept protocol=tcp dst-port=321 in-interface-list=LAN comment="pip, PIP"
 add chain=forward action=accept protocol=udp dst-port=321 in-interface-list=LAN comment="pip, PIP"
-add chain=forward action=accept protocol=tcp dst-port=322 in-interface-list=LAN comment="rtsps, RTSPS"										   
-add chain=forward action=accept protocol=udp dst-port=322 in-interface-list=LAN comment="rtsps, RTSPS"										   
+add chain=forward action=accept protocol=tcp dst-port=322 in-interface-list=LAN comment="rtsps, RTSPS"	
+add chain=forward action=accept protocol=udp dst-port=322 in-interface-list=LAN comment="rtsps, RTSPS"		
 add chain=forward action=accept protocol=tcp dst-port=323 in-interface-list=LAN comment="rpki-rtr, Resource PKI to Router Protocol"
 add chain=forward action=drop protocol=udp dst-port=323 in-interface-list=LAN comment="Reserved"
 add chain=forward action=accept protocol=tcp dst-port=324 in-interface-list=LAN comment="rpki-rtr-tls, Resource PKI to Router Protocol over TLS"
@@ -536,8 +536,8 @@ add chain=forward action=accept protocol=tcp dst-port=351 in-interface-list=LAN 
 add chain=forward action=accept protocol=udp dst-port=351 in-interface-list=LAN comment="matip-type-a, bhoetty, MATIP Type B"
 add chain=forward action=accept protocol=tcp dst-port=352 in-interface-list=LAN comment="dtag-ste-sb, bhoedap4, DTAG"
 add chain=forward action=accept protocol=udp dst-port=352 in-interface-list=LAN comment="dtag-ste-sb, bhoedap4, DTAG"
-add chain=forward action=accept protocol=tcp dst-port=353 in-interface-list=LAN comment="ndsauth, NDSAUTH"                                                                                                                                  
-add chain=forward action=accept protocol=udp dst-port=353 in-interface-list=LAN comment="ndsauth, NDSAUTH" 																																  
+add chain=forward action=accept protocol=tcp dst-port=353 in-interface-list=LAN comment="ndsauth, NDSAUTH"                
+add chain=forward action=accept protocol=udp dst-port=353 in-interface-list=LAN comment="ndsauth, NDSAUTH" 	
 add chain=forward action=accept protocol=tcp dst-port=354 in-interface-list=LAN comment="bh611, bh611"
 add chain=forward action=accept protocol=udp dst-port=354 in-interface-list=LAN comment="bh611, bh611"
 add chain=forward action=accept protocol=tcp dst-port=355 in-interface-list=LAN comment="datex-asn, DATEX-ASN"
@@ -558,8 +558,8 @@ add chain=forward action=accept protocol=tcp dst-port=362 in-interface-list=LAN 
 add chain=forward action=accept protocol=udp dst-port=362 in-interface-list=LAN comment="srssend, SRS Send"
 add chain=forward action=accept protocol=tcp dst-port=363 in-interface-list=LAN comment="rsvp-tunnel, rsvp_tunnel, RSVP Tunnel"
 add chain=forward action=accept protocol=udp dst-port=363 in-interface-list=LAN comment="rsvp-tunnel, rsvp_tunnel, RSVP Tunnel"
-add chain=forward action=accept protocol=tcp dst-port=364 in-interface-list=LAN comment="aurora-cmgr, Aurora CMGR"																																  
-add chain=forward action=accept protocol=udp dst-port=364 in-interface-list=LAN comment="aurora-cmgr, Aurora CMGR"                                                                                                                                                                                                             5/21/97)
+add chain=forward action=accept protocol=tcp dst-port=364 in-interface-list=LAN comment="aurora-cmgr, Aurora CMGR"	
+add chain=forward action=accept protocol=udp dst-port=364 in-interface-list=LAN comment="aurora-cmgr, Aurora CMGR"
 add chain=forward action=accept protocol=tcp dst-port=365 in-interface-list=LAN comment="dtk, DTK"
 add chain=forward action=accept protocol=udp dst-port=365 in-interface-list=LAN comment="dtk, DTK"
 add chain=forward action=accept protocol=tcp dst-port=366 in-interface-list=LAN comment="odmr, ODMR"
@@ -649,7 +649,7 @@ add chain=forward action=accept protocol=udp dst-port=407 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=408 in-interface-list=LAN comment="prm-sm, Prospero Resource Manager Sys. Man"
 add chain=forward action=accept protocol=udp dst-port=408 in-interface-list=LAN comment="prm-sm, Prospero Resource Manager Sys. Man"
 add chain=forward action=accept protocol=tcp dst-port=409 in-interface-list=LAN comment="prm-nm, Prospero Resource Manager Node Man"
-add chain=forward action=accept protocol=udp dst-port=409 in-interface-list=LAN comment="prm-nm, Prospero Resource Manager Node Man"																																																		 discovery mechanisms
+add chain=forward action=accept protocol=udp dst-port=409 in-interface-list=LAN comment="prm-nm, Prospero Resource Manager Node Man"	
 add chain=forward action=accept protocol=tcp dst-port=410 in-interface-list=LAN comment="decladebug, DECLadebug Remote Debug Protocol"
 add chain=forward action=accept protocol=udp dst-port=410 in-interface-list=LAN comment="decladebug, DECLadebug Remote Debug Protocol"
 add chain=forward action=accept protocol=tcp dst-port=411 in-interface-list=LAN comment="rmt, Remote MT Protocol"
@@ -681,149 +681,80 @@ add chain=forward action=accept protocol=udp dst-port=423 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=424 in-interface-list=LAN comment="opc-job-track, IBM Operations Planning and Control Track"
 add chain=forward action=accept protocol=udp dst-port=424 in-interface-list=LAN comment="opc-job-track, IBM Operations Planning and Control Track"
 add chain=forward action=accept protocol=tcp dst-port=425 in-interface-list=LAN comment="icad-el, ICAD"
-
 add chain=forward action=accept protocol=tcp dst-port=426 in-interface-list=LAN comment="smartsdp, smartsdp"
-
 add chain=forward action=accept protocol=tcp dst-port=427 in-interface-list=LAN comment="svrloc, Server Location"
-
 add chain=forward action=accept protocol=tcp dst-port=428 in-interface-list=LAN comment="ocs-cmu, ocs_cmu,  OCS_CMU"
-
 add chain=forward action=accept protocol=tcp dst-port=429 in-interface-list=LAN comment="ocs-amu, ocs_amu, OCS_AMU"
-
 add chain=forward action=accept protocol=tcp dst-port=430 in-interface-list=LAN comment="utmpsd, UTMPSD"
-
 add chain=forward action=accept protocol=tcp dst-port=431 in-interface-list=LAN comment="utmpcd, UTMPCD"
-
 add chain=forward action=accept protocol=tcp dst-port=432 in-interface-list=LAN comment="iasd, IASD"
-
 add chain=forward action=accept protocol=tcp dst-port=433 in-interface-list=LAN comment="nnsp, NNTP for transit servers (NNSP)"
-
 add chain=forward action=accept protocol=tcp dst-port=434 in-interface-list=LAN comment="mobileip-agent, MobileIP-Agent"
-
 add chain=forward action=accept protocol=tcp dst-port=435 in-interface-list=LAN comment="mobilip-mn, MobilIP-MN"
-
 add chain=forward action=accept protocol=tcp dst-port=436 in-interface-list=LAN comment="dna-cml, DNA-CML"
-
 add chain=forward action=accept protocol=tcp dst-port=437 in-interface-list=LAN comment="comscm, comscm"
-
 add chain=forward action=accept protocol=tcp dst-port=438 in-interface-list=LAN comment="dsfgw, dsfgw"
-
 add chain=forward action=accept protocol=tcp dst-port=439 in-interface-list=LAN comment="dasp, dasp"
-
 add chain=forward action=accept protocol=tcp dst-port=440 in-interface-list=LAN comment="sgcp, sgcp"
-
 add chain=forward action=accept protocol=tcp dst-port=441 in-interface-list=LAN comment="decvms-sysmgt, decvms-sysmgt"
-
 add chain=forward action=accept protocol=tcp dst-port=442 in-interface-list=LAN comment="cvc-hostd, cvc_hostd"
-
 add chain=forward action=accept protocol=tcp dst-port=443 in-interface-list=LAN comment="https, http protocol over TLS/SSL"
 add chain=forward action=accept protocol=udp dst-port=443 in-interface-list=LAN comment="https, http protocol over TLS/SSL"
 add chain=forward action=accept protocol=sctp dst-port=443 in-interface-list=LAN comment="https, http protocol over TLS/SSL"
 add chain=forward action=accept protocol=tcp dst-port=444 in-interface-list=LAN comment="snpp, Simple Network Paging Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=445 in-interface-list=LAN comment="microsoft-ds, Microsoft-DS"
-
 add chain=forward action=accept protocol=tcp dst-port=446 in-interface-list=LAN comment="ddm-rdb, DDM-Remote Relational Database Access"
-
 add chain=forward action=accept protocol=tcp dst-port=447 in-interface-list=LAN comment="ddm-dfm, DDM-Distributed File Management"
-
 add chain=forward action=accept protocol=tcp dst-port=448 in-interface-list=LAN comment="ddm-ssl, DDM-Remote DB Access Using Secure Sockets"
-
 add chain=forward action=accept protocol=tcp dst-port=449 in-interface-list=LAN comment="as-servermap, AS Server Mapper"
-
 add chain=forward action=accept protocol=tcp dst-port=450 in-interface-list=LAN comment="tserver, Telecomunication Applications"
-
 add chain=forward action=accept protocol=tcp dst-port=451 in-interface-list=LAN comment="sfs-smp-net, Cray Network Semaphore server"
-
 add chain=forward action=accept protocol=tcp dst-port=452 in-interface-list=LAN comment="sfs-config, Cray SFS config server"
-
 add chain=forward action=accept protocol=tcp dst-port=453 in-interface-list=LAN comment="creativeserver, CreativeServer"
-
 add chain=forward action=accept protocol=tcp dst-port=454 in-interface-list=LAN comment="contentserver, ContentServer"
-
 add chain=forward action=accept protocol=tcp dst-port=455 in-interface-list=LAN comment="creativepartnr, CreativePartnr"
-
 add chain=forward action=accept protocol=tcp dst-port=456 in-interface-list=LAN comment="macon-tcp, macon-tcp"
-
 add chain=forward action=accept protocol=tcp dst-port=457 in-interface-list=LAN comment="scohelp, scohelp"
-
 add chain=forward action=accept protocol=tcp dst-port=458 in-interface-list=LAN comment="appleqtc, apple quick time"
-
 add chain=forward action=accept protocol=tcp dst-port=459 in-interface-list=LAN comment="ampr-rcmd, ampr-rcmd"
-
 add chain=forward action=accept protocol=tcp dst-port=460 in-interface-list=LAN comment="skronk, skronk"
-
 add chain=forward action=accept protocol=tcp dst-port=461 in-interface-list=LAN comment="datasurfsrv, DataRampSrv"
-
 add chain=forward action=accept protocol=tcp dst-port=462 in-interface-list=LAN comment="datasurfsrvsec, DataRampSrvSec"
-
 add chain=forward action=accept protocol=tcp dst-port=463 in-interface-list=LAN comment="alpes, alpes"
-
 add chain=forward action=accept protocol=tcp dst-port=464 in-interface-list=LAN comment="kpasswd, kpasswd"
-
 add chain=forward action=accept protocol=tcp dst-port=465 in-interface-list=LAN comment="urd, submissions, URL Rendezvous Directory for SSM, Message Submission over TLS protocol"
 add chain=forward action=accept protocol=udp dst-port=465 in-interface-list=LAN comment="igmpv3lite, IGMP over UDP for SSM"
 add chain=forward action=accept protocol=tcp dst-port=466 in-interface-list=LAN comment="digital-vrc, digital-vrc"
-
 add chain=forward action=accept protocol=tcp dst-port=467 in-interface-list=LAN comment="mylex-mapd, mylex-mapd"
-
 add chain=forward action=accept protocol=tcp dst-port=468 in-interface-list=LAN comment="photuris, proturis"
-
 add chain=forward action=accept protocol=tcp dst-port=469 in-interface-list=LAN comment="rcp, Radio Control Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=470 in-interface-list=LAN comment="scx-proxy, scx-proxy"
-
 add chain=forward action=accept protocol=tcp dst-port=471 in-interface-list=LAN comment="mondex, Mondex"
-
 add chain=forward action=accept protocol=tcp dst-port=472 in-interface-list=LAN comment="ljk-login, ljk-login"
-
 add chain=forward action=accept protocol=tcp dst-port=473 in-interface-list=LAN comment="hybrid-pop, hybrid-pop"
-
 add chain=forward action=accept protocol=tcp dst-port=474 in-interface-list=LAN comment="tn-tl-w1, tn-tl-w1"
 add chain=forward action=accept protocol=udp dst-port=474 in-interface-list=LAN comment="tn-tl-w2, tn-tl-w2"
-
 add chain=forward action=accept protocol=tcp dst-port=475 in-interface-list=LAN comment="tcpnethaspsrv, tcpnethaspsrv"
-
 add chain=forward action=accept protocol=tcp dst-port=476 in-interface-list=LAN comment="tn-tl-fd1 , tn-tl-fd1 "
-
 add chain=forward action=accept protocol=tcp dst-port=477 in-interface-list=LAN comment="ss7ns, ss7ns"
-
 add chain=forward action=accept protocol=tcp dst-port=478 in-interface-list=LAN comment="spsc, spsc"
-
 add chain=forward action=accept protocol=tcp dst-port=479 in-interface-list=LAN comment="iafserver, iafserver"
-
 add chain=forward action=accept protocol=tcp dst-port=480 in-interface-list=LAN comment="iafdbase, iafdbase"
-
 add chain=forward action=accept protocol=tcp dst-port=481 in-interface-list=LAN comment="ph, Ph service"
-
 add chain=forward action=accept protocol=tcp dst-port=482 in-interface-list=LAN comment="bgs-nsi, bgs-nsi"
-
 add chain=forward action=accept protocol=tcp dst-port=483 in-interface-list=LAN comment="ulpnet, ulpnet"
-
 add chain=forward action=accept protocol=tcp dst-port=484 in-interface-list=LAN comment="integra-sme, Integra Software Management Environment"
-
 add chain=forward action=accept protocol=tcp dst-port=485 in-interface-list=LAN comment="powerburst, Air Soft Power Burst"
-
 add chain=forward action=accept protocol=tcp dst-port=486 in-interface-list=LAN comment="avian, avian"
-
 add chain=forward action=accept protocol=tcp dst-port=487 in-interface-list=LAN comment="saft, saft Simple Asynchronous File Transfer"
-
 add chain=forward action=accept protocol=tcp dst-port=488 in-interface-list=LAN comment="gss-http, gss-http"
-
 add chain=forward action=accept protocol=tcp dst-port=489 in-interface-list=LAN comment="nest-protocol, nest-protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=490 in-interface-list=LAN comment="micom-pfs, micom-pfs"
-
 add chain=forward action=accept protocol=tcp dst-port=491 in-interface-list=LAN comment="go-login, go-login"
-
 add chain=forward action=accept protocol=tcp dst-port=492 in-interface-list=LAN comment="ticf-1, Transport Independent Convergence for FNA"
-
 add chain=forward action=accept protocol=tcp dst-port=493 in-interface-list=LAN comment="ticf-2, Transport Independent Convergence for FNA"
-
 add chain=forward action=accept protocol=tcp dst-port=494 in-interface-list=LAN comment="pov-ray, POV-Ray"
-
 add chain=forward action=accept protocol=tcp dst-port=495 in-interface-list=LAN comment="intecourier, intecourier"
-
 add chain=forward action=accept protocol=tcp dst-port=496 in-interface-list=LAN comment="pim-rp-disc, PIM-RP-DISC"
 add chain=forward action=accept protocol=udp dst-port=496 in-interface-list=LAN comment="pim-rp-disc, PIM-RP-DISC"
 add chain=forward action=accept protocol=tcp dst-port=497 in-interface-list=LAN comment="retrospect, Retrospect backup and restore service"
@@ -875,450 +806,240 @@ add chain=forward action=accept protocol=udp dst-port=519 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=520 in-interface-list=LAN comment="efs, extended file name server"
 add chain=forward action=accept protocol=udp dst-port=520 in-interface-list=LAN comment="router, RIP-uses variant of Xerox NS routing information protocol"
 add chain=forward action=accept protocol=tcp dst-port=521 in-interface-list=LAN comment="ripng, ripng"
-
 add chain=forward action=accept protocol=tcp dst-port=522 in-interface-list=LAN comment="ulp, ULP"
-
 add chain=forward action=accept protocol=tcp dst-port=523 in-interface-list=LAN comment="ibm-db2, IBM-DB2"
-
 add chain=forward action=accept protocol=tcp dst-port=524 in-interface-list=LAN comment="ncp, NCP"
-
 add chain=forward action=accept protocol=tcp dst-port=525 in-interface-list=LAN comment="timed, timeserver"
-
 add chain=forward action=accept protocol=tcp dst-port=526 in-interface-list=LAN comment="tempo, newdate"
-
 add chain=forward action=accept protocol=tcp dst-port=527 in-interface-list=LAN comment="stx, Stock IXChange"
-
 add chain=forward action=accept protocol=tcp dst-port=528 in-interface-list=LAN comment="custix, Customer IXChange"
-
 add chain=forward action=accept protocol=tcp dst-port=529 in-interface-list=LAN comment="irc-serv, IRC-SERV"
-
 add chain=forward action=accept protocol=tcp dst-port=530 in-interface-list=LAN comment="courier, rpc"
-
 add chain=forward action=accept protocol=tcp dst-port=531 in-interface-list=LAN comment="conference, chat"
-
 add chain=forward action=accept protocol=tcp dst-port=532 in-interface-list=LAN comment="netnews, readnews"
-
 add chain=forward action=accept protocol=tcp dst-port=533 in-interface-list=LAN comment="netwall, for emergency broadcasts"
-
 add chain=forward action=accept protocol=tcp dst-port=534 in-interface-list=LAN comment="windream, windream Admin"
-
 add chain=forward action=accept protocol=tcp dst-port=535 in-interface-list=LAN comment="iiop, iiop"
-
 add chain=forward action=accept protocol=tcp dst-port=536 in-interface-list=LAN comment="opalis-rdv, opalis-rdv"
-
 add chain=forward action=accept protocol=tcp dst-port=537 in-interface-list=LAN comment="nmsp, Networked Media Streaming Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=538 in-interface-list=LAN comment="gdomap, gdomap"
-
 add chain=forward action=accept protocol=tcp dst-port=539 in-interface-list=LAN comment="apertus-ldp, Apertus Technologies Load Determination"
-
 add chain=forward action=accept protocol=tcp dst-port=540 in-interface-list=LAN comment="uucp, uucp"
-
 add chain=forward action=accept protocol=tcp dst-port=541 in-interface-list=LAN comment="uucp-rlogin, uucp-rlogin"
-
 add chain=forward action=accept protocol=tcp dst-port=542 in-interface-list=LAN comment="commerce, commerce"
-
 add chain=forward action=accept protocol=tcp dst-port=543 in-interface-list=LAN comment="klogin, klogin"
-
 add chain=forward action=accept protocol=tcp dst-port=544 in-interface-list=LAN comment="kshell, kshell"
-
 add chain=forward action=accept protocol=tcp dst-port=545 in-interface-list=LAN comment="appleqtcsrvr, appleqtcsrvr"
-
 add chain=forward action=accept protocol=tcp dst-port=546 in-interface-list=LAN comment="dhcpv6-client, DHCPv6 Client"
-
 add chain=forward action=accept protocol=tcp dst-port=547 in-interface-list=LAN comment="dhcpv6-server, DHCPv6 Server"
-
 add chain=forward action=accept protocol=tcp dst-port=548 in-interface-list=LAN comment="afpovertcp, AFP over TCP"
-
 add chain=forward action=accept protocol=tcp dst-port=549 in-interface-list=LAN comment="idfp, IDFP"
-
 add chain=forward action=accept protocol=tcp dst-port=550 in-interface-list=LAN comment="new-rwho, new-rwho"
-
 add chain=forward action=accept protocol=tcp dst-port=551 in-interface-list=LAN comment="cybercash, cybercash"
-
 add chain=forward action=accept protocol=tcp dst-port=552 in-interface-list=LAN comment="devshr-nts, DeviceShare"
-
 add chain=forward action=accept protocol=tcp dst-port=553 in-interface-list=LAN comment="pirp, pirp"
-
 add chain=forward action=accept protocol=tcp dst-port=554 in-interface-list=LAN comment="rtsp, Real Time Streaming Protocol (RTSP)"
-
 add chain=forward action=accept protocol=tcp dst-port=555 in-interface-list=LAN comment="dsf, dsf"
-
 add chain=forward action=accept protocol=tcp dst-port=556 in-interface-list=LAN comment="remotefs, rfs server"
-
 add chain=forward action=accept protocol=tcp dst-port=557 in-interface-list=LAN comment="openvms-sysipc, openvms-sysipc"
-
 add chain=forward action=accept protocol=tcp dst-port=558 in-interface-list=LAN comment="sdnskmp, SDNSKMP"
-
 add chain=forward action=accept protocol=tcp dst-port=559 in-interface-list=LAN comment="teedtap, TEEDTAP"
-
 add chain=forward action=accept protocol=tcp dst-port=560 in-interface-list=LAN comment="rmonitor, rmonitord"
-
 add chain=forward action=accept protocol=tcp dst-port=561 in-interface-list=LAN comment="monitor, monitor"
-
 add chain=forward action=accept protocol=tcp dst-port=562 in-interface-list=LAN comment="chshell, chcmd"
-
 add chain=forward action=accept protocol=tcp dst-port=563 in-interface-list=LAN comment="nntps, nntp protocol over TLS/SSL (was snntp)"
-
 add chain=forward action=accept protocol=tcp dst-port=564 in-interface-list=LAN comment="9pfs, plan 9 file service"
-
 add chain=forward action=accept protocol=tcp dst-port=565 in-interface-list=LAN comment="whoami, whoami"
-
 add chain=forward action=accept protocol=tcp dst-port=566 in-interface-list=LAN comment="streettalk, streettalk"
-
 add chain=forward action=accept protocol=tcp dst-port=567 in-interface-list=LAN comment="banyan-rpc, banyan-rpc"
-
 add chain=forward action=accept protocol=tcp dst-port=568 in-interface-list=LAN comment="ms-shuttle, microsoft shuttle"
-
 add chain=forward action=accept protocol=tcp dst-port=569 in-interface-list=LAN comment="ms-rome, microsoft rome"
-
 add chain=forward action=accept protocol=tcp dst-port=570 in-interface-list=LAN comment="meter, demon"
-
 add chain=forward action=accept protocol=tcp dst-port=571 in-interface-list=LAN comment="meter, udemon"
-
 add chain=forward action=accept protocol=tcp dst-port=572 in-interface-list=LAN comment="sonar, sonar"
-
 add chain=forward action=accept protocol=tcp dst-port=573 in-interface-list=LAN comment="banyan-vip, banyan-vip"
-
 add chain=forward action=accept protocol=tcp dst-port=574 in-interface-list=LAN comment="ftp-agent, FTP Software Agent System"
-
 add chain=forward action=accept protocol=tcp dst-port=575 in-interface-list=LAN comment="vemmi, VEMMI"
-
 add chain=forward action=accept protocol=tcp dst-port=576 in-interface-list=LAN comment="ipcd, ipcd"
-
 add chain=forward action=accept protocol=tcp dst-port=577 in-interface-list=LAN comment="vnas, vnas"
-
 add chain=forward action=accept protocol=tcp dst-port=578 in-interface-list=LAN comment="ipdd, ipdd"
-
 add chain=forward action=accept protocol=tcp dst-port=579 in-interface-list=LAN comment="decbsrv, decbsrv"
-
 add chain=forward action=accept protocol=tcp dst-port=580 in-interface-list=LAN comment="sntp-heartbeat, SNTP HEARTBEAT"
-
 add chain=forward action=accept protocol=tcp dst-port=581 in-interface-list=LAN comment="bdp, Bundle Discovery Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=582 in-interface-list=LAN comment="scc-security, SCC Security"
-
 add chain=forward action=accept protocol=tcp dst-port=583 in-interface-list=LAN comment="philips-vc, Philips Video-Conferencing"
-
 add chain=forward action=accept protocol=tcp dst-port=584 in-interface-list=LAN comment="keyserver, Key Server"
-
 add chain=forward action=drop protocol=tcp dst-port=585 in-interface-list=LAN comment="De-registered"
-
 add chain=forward action=accept protocol=tcp dst-port=586 in-interface-list=LAN comment="password-chg, Password Change"
-
 add chain=forward action=accept protocol=tcp dst-port=587 in-interface-list=LAN comment="submission, Message Submission"
-
 add chain=forward action=accept protocol=tcp dst-port=588 in-interface-list=LAN comment="cal, CAL"
-
 add chain=forward action=accept protocol=tcp dst-port=589 in-interface-list=LAN comment="eyelink, EyeLink"
-
 add chain=forward action=accept protocol=tcp dst-port=590 in-interface-list=LAN comment="tns-cml, TNS CML"
-
 add chain=forward action=accept protocol=tcp dst-port=591 in-interface-list=LAN comment="http-alt, FileMaker, Inc. - HTTP Alternate (see Port 80)"
-
 add chain=forward action=accept protocol=tcp dst-port=592 in-interface-list=LAN comment="eudora-set, Eudora Set"
-
 add chain=forward action=accept protocol=tcp dst-port=593 in-interface-list=LAN comment="http-rpc-epmap, HTTP RPC Ep Map"
-
 add chain=forward action=accept protocol=tcp dst-port=594 in-interface-list=LAN comment="tpip, TPIP"
-
 add chain=forward action=accept protocol=tcp dst-port=595 in-interface-list=LAN comment="cab-protocol, CAB Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=596 in-interface-list=LAN comment="smsd, SMSD"
-
 add chain=forward action=accept protocol=tcp dst-port=597 in-interface-list=LAN comment="ptcnameservice, PTC Name Service"
-
 add chain=forward action=accept protocol=tcp dst-port=598 in-interface-list=LAN comment="sco-websrvrmg3, SCO Web Server Manager 3"
-
 add chain=forward action=accept protocol=tcp dst-port=599 in-interface-list=LAN comment="acp, Aeolon Core Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=600 in-interface-list=LAN comment="ipcserver, Sun IPC server"
-
 add chain=forward action=accept protocol=tcp dst-port=601 in-interface-list=LAN comment="syslog-conn, Reliable Syslog Service"
-
 add chain=forward action=accept protocol=tcp dst-port=602 in-interface-list=LAN comment="xmlrpc-beep, XML-RPC over BEEP"
-
 add chain=forward action=accept protocol=tcp dst-port=603 in-interface-list=LAN comment="idxp, IDXP"
-
 add chain=forward action=accept protocol=tcp dst-port=604 in-interface-list=LAN comment="tunnel, TUNNEL"
-
 add chain=forward action=accept protocol=tcp dst-port=605 in-interface-list=LAN comment="soap-beep, SOAP over BEEP"
-
 add chain=forward action=accept protocol=tcp dst-port=606 in-interface-list=LAN comment="urm, Cray Unified Resource Manager" 
-
 add chain=forward action=accept protocol=tcp dst-port=607 in-interface-list=LAN comment="nqs, nqs"
-
 add chain=forward action=accept protocol=tcp dst-port=608 in-interface-list=LAN comment="sift-uft, Sender-Initiated/Unsolicited File Transfer"
-
 add chain=forward action=accept protocol=tcp dst-port=609 in-interface-list=LAN comment="npmp-trap, npmp-trap"
-
 add chain=forward action=accept protocol=tcp dst-port=610 in-interface-list=LAN comment="npmp-local, npmp-local"
-
 add chain=forward action=accept protocol=tcp dst-port=611 in-interface-list=LAN comment="npmp-gui, npmp-gui"
-
 add chain=forward action=accept protocol=tcp dst-port=612 in-interface-list=LAN comment="hmmp-ind, HMMP Indication"
-
 add chain=forward action=accept protocol=tcp dst-port=613 in-interface-list=LAN comment="hmmp-op, HMMP Operation"
-
 add chain=forward action=accept protocol=tcp dst-port=614 in-interface-list=LAN comment="sshell, SSLshell"
-
 add chain=forward action=accept protocol=tcp dst-port=615 in-interface-list=LAN comment="sco-inetmgr, Internet Configuration Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=616 in-interface-list=LAN comment="sco-sysmgr, SCO System Administration Server"
-
 add chain=forward action=accept protocol=tcp dst-port=617 in-interface-list=LAN comment="sco-dtmgr, SCO Desktop Administration Server"
-
 add chain=forward action=accept protocol=tcp dst-port=618 in-interface-list=LAN comment="dei-icda, DEI-ICDA"
-
 add chain=forward action=accept protocol=tcp dst-port=619 in-interface-list=LAN comment="compaq-evm, Compaq EVM"
-
 add chain=forward action=accept protocol=tcp dst-port=620 in-interface-list=LAN comment="sco-websrvrmgr, SCO WebServer Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=621 in-interface-list=LAN comment="escp-ip, ESCP"
-
 add chain=forward action=accept protocol=tcp dst-port=622 in-interface-list=LAN comment="collaborator, Collaborator"
-
 add chain=forward action=accept protocol=tcp dst-port=623 in-interface-list=LAN comment="oob-ws-http, DMTF out-of-band web services management protocol"
 add chain=forward action=accept protocol=udp dst-port=623 in-interface-list=LAN comment="asf-rmcp, ASF Remote Management and Control Protocol"
 add chain=forward action=accept protocol=tcp dst-port=624 in-interface-list=LAN comment="cryptoadmin, Crypto Admin"
-
 add chain=forward action=accept protocol=tcp dst-port=625 in-interface-list=LAN comment="dec-dlm, dec_dlm, DEC DLM"
-
 add chain=forward action=accept protocol=tcp dst-port=626 in-interface-list=LAN comment="asia, ASIA"
-
 add chain=forward action=accept protocol=tcp dst-port=627 in-interface-list=LAN comment="passgo-tivoli, PassGo Tivoli"
-
 add chain=forward action=accept protocol=tcp dst-port=628 in-interface-list=LAN comment="qmqp, QMQP"
-
 add chain=forward action=accept protocol=tcp dst-port=629 in-interface-list=LAN comment="3com-amp3, 3Com AMP3"
-
 add chain=forward action=accept protocol=tcp dst-port=630 in-interface-list=LAN comment="rda, RDA"
-
 add chain=forward action=accept protocol=tcp dst-port=631 in-interface-list=LAN comment="ipp, ipps, IPP (Internet Printing Protocol), Internet Printing Protocol over HTTPS"
 add chain=forward action=accept protocol=udp dst-port=631 in-interface-list=LAN comment="ipp, IPP (Internet Printing Protocol)"
 add chain=forward action=accept protocol=tcp dst-port=632 in-interface-list=LAN comment="bmpp, bmpp"
-
 add chain=forward action=accept protocol=tcp dst-port=633 in-interface-list=LAN comment="servstat, Service Status update (Sterling Software)"
-
 add chain=forward action=accept protocol=tcp dst-port=634 in-interface-list=LAN comment="ginad, ginad"
-
 add chain=forward action=accept protocol=tcp dst-port=635 in-interface-list=LAN comment="rlzdbase, RLZ DBase"
-
 add chain=forward action=accept protocol=tcp dst-port=636 in-interface-list=LAN comment="ldaps, ldap protocol over TLS/SSL(was sldap)"
-
 add chain=forward action=accept protocol=tcp dst-port=637 in-interface-list=LAN comment="lanserver, lanserver"
-
 add chain=forward action=accept protocol=tcp dst-port=638 in-interface-list=LAN comment="mcns-sec , mcns-sec "
-
 add chain=forward action=accept protocol=tcp dst-port=639 in-interface-list=LAN comment="msdp, MSDP"
-
 add chain=forward action=accept protocol=tcp dst-port=640 in-interface-list=LAN comment="entrust-sps, entrust-sps"
-
 add chain=forward action=accept protocol=tcp dst-port=641 in-interface-list=LAN comment="repcmd, repcmd"
-
 add chain=forward action=accept protocol=tcp dst-port=642 in-interface-list=LAN comment="esro-emsdp, ESRO-EMSDP V1.3"
-
 add chain=forward action=accept protocol=tcp dst-port=643 in-interface-list=LAN comment="sanity, SANity"
-
 add chain=forward action=accept protocol=tcp dst-port=644 in-interface-list=LAN comment="dwr, dwr"
-
 add chain=forward action=accept protocol=tcp dst-port=645 in-interface-list=LAN comment="pssc, PSSC"
-
 add chain=forward action=accept protocol=tcp dst-port=646 in-interface-list=LAN comment="ldp, LDP"
-
 add chain=forward action=accept protocol=tcp dst-port=647 in-interface-list=LAN comment="dhcp-failover, DHCP Failover"
-
 add chain=forward action=accept protocol=tcp dst-port=648 in-interface-list=LAN comment="rrp, Registry Registrar Protocol(RRP)"
-
 add chain=forward action=accept protocol=tcp dst-port=649 in-interface-list=LAN comment="cadview-3d, Cadview-3d - streaming 3d models over the internet"
-
 add chain=forward action=accept protocol=tcp dst-port=650 in-interface-list=LAN comment="obex, OBEX"
-
 add chain=forward action=accept protocol=tcp dst-port=651 in-interface-list=LAN comment="ieee-mms, IEEE MMS"
-
 add chain=forward action=accept protocol=tcp dst-port=652 in-interface-list=LAN comment="hello-port, HELLO_PORT"
-
 add chain=forward action=accept protocol=tcp dst-port=653 in-interface-list=LAN comment="repscmd, RepCmd"
-
 add chain=forward action=accept protocol=tcp dst-port=654 in-interface-list=LAN comment="aodv, AODV"
-
 add chain=forward action=accept protocol=tcp dst-port=655 in-interface-list=LAN comment="tinc, TINC"
-
 add chain=forward action=accept protocol=tcp dst-port=656 in-interface-list=LAN comment="spmp, SPMP"
-
 add chain=forward action=accept protocol=tcp dst-port=657 in-interface-list=LAN comment="rmc, RMC"
-
 add chain=forward action=accept protocol=tcp dst-port=658 in-interface-list=LAN comment="tenfold, TenFold"
-
 add chain=forward action=drop protocol=tcp dst-port=659 in-interface-list=LAN comment="Removed"
 add chain=forward action=drop protocol=udp dst-port=659 in-interface-list=LAN comment="Removed"
 add chain=forward action=accept protocol=tcp dst-port=660 in-interface-list=LAN comment="mac-srvr-admin, MacOS Server Admin"
-
 add chain=forward action=accept protocol=tcp dst-port=661 in-interface-list=LAN comment="hap, HAP"
-
 add chain=forward action=accept protocol=tcp dst-port=662 in-interface-list=LAN comment="pftp, PFTP"
-
 add chain=forward action=accept protocol=tcp dst-port=663 in-interface-list=LAN comment="purenoise, PureNoise"
-
 add chain=forward action=accept protocol=tcp dst-port=664 in-interface-list=LAN comment="oob-ws-https, DMTF out-of-band secure web services management protocol"
 add chain=forward action=accept protocol=udp dst-port=664 in-interface-list=LAN comment="asf-secure-rmcp, ASF Secure Remote Management and Control Protocol"
 add chain=forward action=accept protocol=tcp dst-port=665 in-interface-list=LAN comment="sun-dr, Sun DR"
-
 add chain=forward action=accept protocol=tcp dst-port=666 in-interface-list=LAN comment="mdqs, doom, doom Id Software"
-
 add chain=forward action=accept protocol=tcp dst-port=667 in-interface-list=LAN comment="disclose, campaign contribution disclosures - SDR campaign contribution"
-
 add chain=forward action=accept protocol=tcp dst-port=668 in-interface-list=LAN comment="mecomm, MeComm"
-
 add chain=forward action=accept protocol=tcp dst-port=669 in-interface-list=LAN comment="meregister, MeRegister"
-
 add chain=forward action=accept protocol=tcp dst-port=670 in-interface-list=LAN comment="vacdsm-sws, VACDSM-SWS"
-
 add chain=forward action=accept protocol=tcp dst-port=671 in-interface-list=LAN comment="vacdsm-app, VACDSM-APP"
-
 add chain=forward action=accept protocol=tcp dst-port=672 in-interface-list=LAN comment="vpps-qua, VPPS-QUA"
-
 add chain=forward action=accept protocol=tcp dst-port=673 in-interface-list=LAN comment="cimplex, CIMPLEX"
-
 add chain=forward action=accept protocol=tcp dst-port=674 in-interface-list=LAN comment="acap, ACAP"
-
 add chain=forward action=accept protocol=tcp dst-port=675 in-interface-list=LAN comment="dctp, DCTP"
-
 add chain=forward action=accept protocol=tcp dst-port=676 in-interface-list=LAN comment="vpps-via, VPPS Via"
-
 add chain=forward action=accept protocol=tcp dst-port=677 in-interface-list=LAN comment="vpp, Virtual Presence Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=678 in-interface-list=LAN comment="ggf-ncp, GNU Generation Foundation NCP"
-
 add chain=forward action=accept protocol=tcp dst-port=679 in-interface-list=LAN comment="mrm, MRM"
-
 add chain=forward action=accept protocol=tcp dst-port=680 in-interface-list=LAN comment="entrust-aaas, entrust-aaas"
-
 add chain=forward action=accept protocol=tcp dst-port=681 in-interface-list=LAN comment="entrust-aams, entrust-aams"
-
 add chain=forward action=accept protocol=tcp dst-port=682 in-interface-list=LAN comment="xfr, XFR"
-
 add chain=forward action=accept protocol=tcp dst-port=683 in-interface-list=LAN comment="corba-iiop, CORBA IIOP"
-
 add chain=forward action=accept protocol=tcp dst-port=684 in-interface-list=LAN comment="corba-iiop-ssl, CORBA IIOP SSL"
-
 add chain=forward action=accept protocol=tcp dst-port=685 in-interface-list=LAN comment="mdc-portmapper, MDC Port Mapper"
-
 add chain=forward action=accept protocol=tcp dst-port=686 in-interface-list=LAN comment="hcp-wismar, Hardware Control Protocol Wismar"
-
 add chain=forward action=accept protocol=tcp dst-port=687 in-interface-list=LAN comment="asipregistry, asipregistry"
-
 add chain=forward action=accept protocol=tcp dst-port=688 in-interface-list=LAN comment="realm-rusd, ApplianceWare managment protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=689 in-interface-list=LAN comment="nmap, NMAP"
-
 add chain=forward action=accept protocol=tcp dst-port=690 in-interface-list=LAN comment="vatp, Velneo Application Transfer Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=691 in-interface-list=LAN comment="msexch-routing, MS Exchange Routing"
-
 add chain=forward action=accept protocol=tcp dst-port=692 in-interface-list=LAN comment="hyperwave-isp, Hyperwave-ISP"
-
 add chain=forward action=accept protocol=tcp dst-port=693 in-interface-list=LAN comment="connendp, almanid Connection Endpoint"
-
 add chain=forward action=accept protocol=tcp dst-port=694 in-interface-list=LAN comment="ha-cluster, ha-cluster"
-
 add chain=forward action=accept protocol=tcp dst-port=695 in-interface-list=LAN comment="ieee-mms-ssl, IEEE-MMS-SSL"
-
 add chain=forward action=accept protocol=tcp dst-port=696 in-interface-list=LAN comment="rushd, RUSHD"
-
 add chain=forward action=accept protocol=tcp dst-port=697 in-interface-list=LAN comment="uuidgen, UUIDGEN"
-
 add chain=forward action=accept protocol=tcp dst-port=698 in-interface-list=LAN comment="olsr, OLSR"
-
 add chain=forward action=accept protocol=tcp dst-port=699 in-interface-list=LAN comment="accessnetwork, Access Network"
-
 add chain=forward action=accept protocol=tcp dst-port=700 in-interface-list=LAN comment="epp, Extensible Provisioning Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=701 in-interface-list=LAN comment="lmp, Link Management Protocol(LMP)"
-
 add chain=forward action=accept protocol=tcp dst-port=702 in-interface-list=LAN comment="iris-beep, IRIS over BEEP"
-
 add chain=forward action=drop protocol=tcp dst-port=703 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=703 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=704 in-interface-list=LAN comment="elcsd, errlog copy/server daemon"
-
 add chain=forward action=accept protocol=tcp dst-port=705 in-interface-list=LAN comment="agentx, AgentX"
-
 add chain=forward action=accept protocol=tcp dst-port=706 in-interface-list=LAN comment="silc, SILC"
-
 add chain=forward action=accept protocol=tcp dst-port=707 in-interface-list=LAN comment="borland-dsj, Borland DSJ"
-
 add chain=forward action=drop protocol=tcp dst-port=708 in-interface-list=LAN comment="Unassigned"   
 add chain=forward action=drop protocol=udp dst-port=708 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=709 in-interface-list=LAN comment="entrust-kmsh, Entrust Key Management Service Handler"
-
 add chain=forward action=accept protocol=tcp dst-port=710 in-interface-list=LAN comment="entrust-ash, Entrust Administration Service Handler"
-
 add chain=forward action=accept protocol=tcp dst-port=711 in-interface-list=LAN comment="cisco-tdp, Cisco TDP"
-
 add chain=forward action=accept protocol=tcp dst-port=712 in-interface-list=LAN comment="tbrpf, TBRPF"
-
 add chain=forward action=accept protocol=tcp dst-port=713 in-interface-list=LAN comment="iris-xpc, IRIS over XPC"
-
 add chain=forward action=accept protocol=tcp dst-port=715 in-interface-list=LAN comment="iris-xpcs, IRIS over XPCS"
-
 add chain=forward action=accept protocol=tcp dst-port=715 in-interface-list=LAN comment="iris-lwz, IRIS-LWZ"
-
 add chain=forward action=accept protocol=udp dst-port=716 in-interface-list=LAN comment="pana, PANA Messages"
 add chain=forward action=accept protocol=tcp dst-port=717-728 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=udp dst-port=717-728 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=729 in-interface-list=LAN comment="netviewdm1, IBM NetView DM/6000 Server/Client"
-
 add chain=forward action=accept protocol=tcp dst-port=730 in-interface-list=LAN comment="netviewdm2, IBM NetView DM/6000 send/tcp"
-
 add chain=forward action=accept protocol=tcp dst-port=731 in-interface-list=LAN comment="netviewdm3, IBM NetView DM/6000 receive/tcp"
-
 add chain=forward action=drop protocol=tcp dst-port=732-740 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=732-740 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=741 in-interface-list=LAN comment="netgw, netGW"
-
 add chain=forward action=accept protocol=tcp dst-port=742 in-interface-list=LAN comment="netrcs, Network based Rev. Cont. Sys."
-
 add chain=forward action=drop protocol=tcp dst-port=743 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=743 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=744 in-interface-list=LAN comment="flexlm, Flexible License Manager"
-
 add chain=forward action=drop protocol=tcp dst-port=745-746 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=745-746 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=747 in-interface-list=LAN comment="fujitsu-dev, Fujitsu Device Control"
-
 add chain=forward action=accept protocol=tcp dst-port=748 in-interface-list=LAN comment="ris-cm, Russell Info Sci Calendar Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=749 in-interface-list=LAN comment="kerberos-adm, kerberos administration"
-
 add chain=forward action=accept protocol=tcp dst-port=750 in-interface-list=LAN comment="rfile"
 add chain=forward action=accept protocol=udp dst-port=750 in-interface-list=LAN comment="loadav, kerberos-iv, kerberos version iv"
 add chain=forward action=accept protocol=tcp dst-port=751 in-interface-list=LAN comment="pump, pump"
-
 add chain=forward action=accept protocol=tcp dst-port=752 in-interface-list=LAN comment="qrh, qrh"
-
 add chain=forward action=accept protocol=tcp dst-port=753 in-interface-list=LAN comment="rrh, rrh"
-
 add chain=forward action=accept protocol=tcp dst-port=754 in-interface-list=LAN comment="tell, send"
-
 add chain=forward action=drop protocol=tcp dst-port=755-757 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=755-757 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=758 in-interface-list=LAN comment="nlogin, nlogin"
-
 add chain=forward action=accept protocol=tcp dst-port=759 in-interface-list=LAN comment="con, con"
-
 add chain=forward action=accept protocol=tcp dst-port=760 in-interface-list=LAN comment="ns, ns"
-
 add chain=forward action=accept protocol=tcp dst-port=761 in-interface-list=LAN comment="rxe, rxe"
-
 add chain=forward action=accept protocol=tcp dst-port=762 in-interface-list=LAN comment="quotad, quotad"
-
 add chain=forward action=accept protocol=tcp dst-port=763 in-interface-list=LAN comment="cycleserv, cycleserv"
-
 add chain=forward action=accept protocol=tcp dst-port=764 in-interface-list=LAN comment="omserv, omserv"
-
 add chain=forward action=accept protocol=tcp dst-port=765 in-interface-list=LAN comment="webster, webster"
-
 add chain=forward action=drop protocol=tcp dst-port=766 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=766 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=767 in-interface-list=LAN comment="phonebook, phone"
@@ -1326,13 +1047,9 @@ add chain=forward action=accept protocol=udp dst-port=767 in-interface-list=LAN 
 add chain=forward action=derop protocol=tcp dst-port=768 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=derop protocol=udp dst-port=768 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=769 in-interface-list=LAN comment="vid, vid"
-
 add chain=forward action=accept protocol=tcp dst-port=770 in-interface-list=LAN comment="cadlock, cadlock"
-
 add chain=forward action=accept protocol=tcp dst-port=771 in-interface-list=LAN comment="rtip, rtip"
-
 add chain=forward action=accept protocol=tcp dst-port=772 in-interface-list=LAN comment="cycleserv2, cycleserv2"
-
 add chain=forward action=accept protocol=tcp dst-port=773 in-interface-list=LAN comment="submit, submit"
 add chain=forward action=accept protocol=udp dst-port=773 in-interface-list=LAN comment="notify, notify"
 add chain=forward action=accept protocol=tcp dst-port=774 in-interface-list=LAN comment="rpasswd, rpasswd"
@@ -1340,21 +1057,16 @@ add chain=forward action=accept protocol=udp dst-port=774 in-interface-list=LAN 
 add chain=forward action=accept protocol=tcp dst-port=775 in-interface-list=LAN comment="entomb, entomb"
 add chain=forward action=accept protocol=udp dst-port=775 in-interface-list=LAN comment="acmaint-transd, acmaint_transd"
 add chain=forward action=accept protocol=tcp dst-port=776 in-interface-list=LAN comment="wpages, wpages"
-
 add chain=forward action=accept protocol=tcp dst-port=777 in-interface-list=LAN comment="multiling-http, Multiling HTTP"
-
 add chain=forward action=drop protocol=tcp dst-port=778-779 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=778-779 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=780 in-interface-list=LAN comment="wpgs, wpgs"
-
 add chain=forward action=drop protocol=tcp dst-port=781-799 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=781-799 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=800 in-interface-list=LAN comment="mdbs-daemon, mdbs_daemon"
 add chain=forward action=accept protocol=udp dst-port=800 in-interface-list=LAN comment="mdbs-daemon, mdbs_daemon"
 add chain=forward action=accept protocol=tcp dst-port=801 in-interface-list=LAN comment="device, device"
-
 add chain=forward action=accept protocol=tcp dst-port=802 in-interface-list=LAN comment="mbap-s, Modbus Application Protocol Secure"
-
 add chain=forward action=drop protocol=tcp dst-port=803-809 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=803-809 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=810 in-interface-list=LAN comment="fcp-udp, FCP"
@@ -1362,33 +1074,22 @@ add chain=forward action=accept protocol=udp dst-port=810 in-interface-list=LAN 
 add chain=forward action=drop protocol=tcp dst-port=811-827 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=811-827 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=828 in-interface-list=LAN comment="itm-mcell-s, itm-mcell-s"
-
 add chain=forward action=accept protocol=tcp dst-port=829 in-interface-list=LAN comment="pkix-3-ca-ra, PKIX-3 CA/RA"
-
 add chain=forward action=accept protocol=tcp dst-port=830 in-interface-list=LAN comment="netconf-ssh, NETCONF over SSH"
-
 add chain=forward action=accept protocol=tcp dst-port=831 in-interface-list=LAN comment="netconf-beep, NETCONF over BEEP"
-
 add chain=forward action=accept protocol=tcp dst-port=832 in-interface-list=LAN comment="netconfsoaphttp, NETCONF for SOAP over HTTPS"
-
 add chain=forward action=accept protocol=tcp dst-port=833 in-interface-list=LAN comment="netconfsoapbeep, NETCONF for SOAP over BEEP"
-
 add chain=forward action=drop protocol=tcp dst-port=834-846 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=834-846 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=847 in-interface-list=LAN comment="dhcp-failover2, dhcp-failover 2"
-
 add chain=forward action=accept protocol=tcp dst-port=848 in-interface-list=LAN comment="gdoi, GDOI"
-
 add chain=forward action=drop protocol=tcp dst-port=849-852 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=849-852 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=853 in-interface-list=LAN comment="domain-s, DNS query-response protocol run over TLS/DTLS"
-
 add chain=forward action=accept protocol=tcp dst-port=854 in-interface-list=LAN comment="dlep, Dynamic Link Exchange Protocol (DLEP)"
-
-add chain=forward action=drop protocol=tcp dst-port=855-859 in-interface-list=LAN comment="Unassigned"                                                                                                                                                                                                                                           historic, not usable for use with many common service                                                                                                                                                                       discovery mechanisms.
+add chain=forward action=drop protocol=tcp dst-port=855-859 in-interface-list=LAN comment="Unassigned"                                                               
 add chain=forward action=drop protocol=udp dst-port=855-859 in-interface-list=LAN comment="Unassigned" 
 add chain=forward action=accept protocol=tcp dst-port=860 in-interface-list=LAN comment="iscsi, iSCSI"
-
 add chain=forward action=accept protocol=tcp dst-port=861 in-interface-list=LAN comment="owamp-control, OWAMP-Control"
 add chain=forward action=accept protocol=udp dst-port=861 in-interface-list=LAN comment="owamp-test, OWAMP-Test"
 add chain=forward action=accept protocol=tcp dst-port=862 in-interface-list=LAN comment="twamp-control, TWAMP-Control"
@@ -1396,21 +1097,16 @@ add chain=forward action=accept protocol=udp dst-port=862 in-interface-list=LAN 
 add chain=forward action=drop protocol=tcp dst-port=863-872 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=863-872 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=873 in-interface-list=LAN comment="rsync, rsync"
-
 add chain=forward action=drop protocol=tcp dst-port=874-885 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=874-885 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=886 in-interface-list=LAN comment="iclcnet-locate, ICL coNETion locate server"
 add chain=forward action=accept protocol=udp dst-port=886 in-interface-list=LAN comment="iclcnet-locate, ICL coNETion locate server, ICL coNETion server info"
 add chain=forward action=accept protocol=tcp dst-port=887 in-interface-list=LAN comment="iclcnet-svinfo, iclcnet_svinfo, ICL coNETion server info"
-
 add chain=forward action=accept protocol=tcp dst-port=888 in-interface-list=LAN comment="accessbuilder, AccessBuilder"
-
 add chain=forward action=drop protocol=tcp dst-port=889-899 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=889-899 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=900 in-interface-list=LAN comment="omginitialrefs, OMG Initial Refs"
-
 add chain=forward action=accept protocol=tcp dst-port=901 in-interface-list=LAN comment="smpnameres, SMPNAMERES"
-
 add chain=forward action=accept protocol=tcp dst-port=902 in-interface-list=LAN comment="ideafarm-door, self documenting Telnet Door"
 add chain=forward action=accept protocol=udp dst-port=902 in-interface-list=LAN comment="ideafarm-door, self documenting Door: send 0x00 for info"
 add chain=forward action=accept protocol=tcp dst-port=903 in-interface-list=LAN comment="ideafarm-panic, self documenting Telnet panic Door"
@@ -1418,13 +1114,9 @@ add chain=forward action=accept protocol=udp dst-port=903 in-interface-list=LAN 
 add chain=forward action=drop protocol=tcp dst-port=904-909 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=904-909 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=910 in-interface-list=LAN comment="kink, Kerberized Internet Negotiation of Keys (KINK)"
-
 add chain=forward action=accept protocol=tcp dst-port=911 in-interface-list=LAN comment="xact-backup, xact-backup"
-
 add chain=forward action=accept protocol=tcp dst-port=912 in-interface-list=LAN comment="apex-mesh, APEX relay-relay service"
-
 add chain=forward action=accept protocol=tcp dst-port=913 in-interface-list=LAN comment="apex-edge, APEX endpoint-relay service"
-
 add chain=forward action=accept protocol=tcp dst-port=914-952 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=udp dst-port=914-952 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=953 in-interface-list=LAN comment="rndc, BIND9 remote name daemon controller"
@@ -1432,29 +1124,21 @@ add chain=forward action=drop protocol=udp dst-port=953 in-interface-list=LAN co
 add chain=forward action=drop protocol=tcp dst-port=954-988 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=drop protocol=udp dst-port=954-988 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=989 in-interface-list=LAN comment="ftps-data, ftp protocol, data, over TLS/SSL"
-
 add chain=forward action=accept protocol=tcp dst-port=990 in-interface-list=LAN comment="ftps, ftp protocol, control, over TLS/SSL"
-
 add chain=forward action=accept protocol=tcp dst-port=991 in-interface-list=LAN comment="nas, Netnews Administration System"
-
 add chain=forward action=accept protocol=tcp dst-port=992 in-interface-list=LAN comment="telnets, telnet protocol over TLS/SSL"
-
 add chain=forward action=accept protocol=tcp dst-port=993 in-interface-list=LAN comment="imaps, IMAP over TLS protocol"
 add chain=forward action=accept protocol=tcp dst-port=993 in-interface-list=LAN comment="imaps, IMAP4 protocol over TLS/SSL"
 add chain=forward action=drop protocol=tcp dst-port=994 in-interface-list=LAN comment="Reserved"
-
 add chain=forward action=accept protocol=tcp dst-port=995 in-interface-list=LAN comment="pop3s, POP3 over TLS protocol"
 add chain=forward action=accept protocol=udp dst-port=995 in-interface-list=LAN comment="pop3s, pop3 protocol over TLS/SSL (was spop3)"
 add chain=forward action=accept protocol=tcp dst-port=996 in-interface-list=LAN comment="vsinet, vsinet"
-
 add chain=forward action=accept protocol=tcp dst-port=997 in-interface-list=LAN comment="maitrd, maitrd"
-
 add chain=forward action=accept protocol=tcp dst-port=998 in-interface-list=LAN comment="busboy, busboy"
 add chain=forward action=accept protocol=udp dst-port=998 in-interface-list=LAN comment="puparp, puparp"
 add chain=forward action=accept protocol=tcp dst-port=999 in-interface-list=LAN comment="garcon, puprouter"
 add chain=forward action=accept protocol=udp dst-port=999 in-interface-list=LAN comment="applix, puprouter, Applix ac"
 add chain=forward action=accept protocol=tcp dst-port=1000 in-interface-list=LAN comment="cadlock2, cadlock2"
-
 add chain=forward action=accept protocol=tcp dst-port=1001 in-interface-list=LAN comment="webpush, HTTP Web Pus"
 add chain=forward action=drop protocol=udp dst-port=1001 in-interface-list=LAN comment="Reserved"
 add chain=forward action=drop protocol=tcp dst-port=1002-1007 in-interface-list=LAN comment="Unassigned"
@@ -1480,125 +1164,67 @@ add chain=forward action=accept protocol=udp dst-port=1023-1024 in-interface-lis
 add chain=forward action=accept protocol=tcp dst-port=1025 in-interface-list=LAN comment="blackjack, network blackjack"
 add chain=forward action=accept protocol=udp dst-port=1025 in-interface-list=LAN comment="blackjack, network blackjack"
 add chain=forward action=accept protocol=tcp dst-port=1026 in-interface-list=LAN comment="cap, Calendar Access Protocol"
-
 add chain=forward action=drop protocol=tcp dst-port=1027 in-interface-list=LAN comment="Reserved"
 add chain=forward action=accept protocol=tcp dst-port=1027 in-interface-list=LAN comment="6a44, IPv6 Behind NAT44 CPEs"
 add chain=forward action=drop protocol=tcp dst-port=1028 in-interface-list=LAN comment="Deprecated"
-
 add chain=forward action=accept protocol=tcp dst-port=1029 in-interface-list=LAN comment="solid-mux, Solid Mux Server"
-
 add chain=forward action=drop protocol=tcp dst-port=1030-1032 in-interface-list=LAN comment="Reserved"
-
 add chain=forward action=accept protocol=tcp dst-port=1033 in-interface-list=LAN comment="netinfo-loca, local netinfo port"
-
 add chain=forward action=accept protocol=tcp dst-port=1034 in-interface-list=LAN comment="activesync, ActiveSync Notifications"
-
 add chain=forward action=accept protocol=tcp dst-port=1035 in-interface-list=LAN comment="mxxrlogin, MX-XR RPC"
-
 add chain=forward action=accept protocol=tcp dst-port=1036 in-interface-list=LAN comment="nsstp, Nebula Secure Segment Transfer Protocol Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=1037 in-interface-list=LAN comment="ams, AMS"
-
 add chain=forward action=accept protocol=tcp dst-port=1038 in-interface-list=LAN comment="mtqp, Message Tracking Query"
-
 add chain=forward action=accept protocol=tcp dst-port=1039 in-interface-list=LAN comment="sbl, Streamlined Blackhole"
-
 add chain=forward action=accept protocol=tcp dst-port=1040 in-interface-list=LAN comment="netarx, Netarx Netcare"
-
 add chain=forward action=accept protocol=tcp dst-port=1041 in-interface-list=LAN comment="danf-ak2, AK2 Produc"
-
 add chain=forward action=accept protocol=tcp dst-port=1042 in-interface-list=LAN comment="afrog, Subnet Roaming"
-
 add chain=forward action=accept protocol=tcp dst-port=1043 in-interface-list=LAN comment="boinc-client, BOINC Client Control"
-
 add chain=forward action=accept protocol=tcp dst-port=1044 in-interface-list=LAN comment="dcutility, Dev Consortium Utility"
-
 add chain=forward action=accept protocol=tcp dst-port=1045 in-interface-list=LAN comment="fpitp, Fingerprint Image Transfer Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=1046 in-interface-list=LAN comment="wfremotertm, WebFilter Remote Monitor"
-
 add chain=forward action=accept protocol=tcp dst-port=1047 in-interface-list=LAN comment="neod1, Sun's NEO Object Request Broker"
-
 add chain=forward action=accept protocol=tcp dst-port=1048 in-interface-list=LAN comment="neod2, Sun's NEO Object Request Broker"
-
 add chain=forward action=accept protocol=tcp dst-port=1049 in-interface-list=LAN comment="td-postman, Tobit David Postman VPMN"
-
 add chain=forward action=accept protocol=tcp dst-port=1050 in-interface-list=LAN comment="cma, CORBA Management Agent"
-
 add chain=forward action=accept protocol=tcp dst-port=1051 in-interface-list=LAN comment="optima-vnet, Optima VNET"
-
 add chain=forward action=accept protocol=tcp dst-port=1052 in-interface-list=LAN comment="ddt, Dynamic DNS Tools"
-
 add chain=forward action=accept protocol=tcp dst-port=1053 in-interface-list=LAN comment="remote-as, Remote Assistant (RA)"
-
 add chain=forward action=accept protocol=tcp dst-port=1054 in-interface-list=LAN comment="brvread, BRVREAD"
-
 add chain=forward action=accept protocol=tcp dst-port=1055 in-interface-list=LAN comment="ansyslmd, ANSYS - License Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=1056 in-interface-list=LAN comment="vfo, VFO"
-
 add chain=forward action=accept protocol=tcp dst-port=1057 in-interface-list=LAN comment="startron, STARTRON"
-
 add chain=forward action=accept protocol=tcp dst-port=1058 in-interface-list=LAN comment="nim, nim"
-
 add chain=forward action=accept protocol=tcp dst-port=1059 in-interface-list=LAN comment="nimreg, nimreg"
-
 add chain=forward action=accept protocol=tcp dst-port=1060 in-interface-list=LAN comment="polestar, POLESTAR"
-
 add chain=forward action=accept protocol=tcp dst-port=1061 in-interface-list=LAN comment="kiosk, KIOSK"
-
 add chain=forward action=accept protocol=tcp dst-port=1062 in-interface-list=LAN comment="veracity, Veracity"
-
 add chain=forward action=accept protocol=tcp dst-port=1063 in-interface-list=LAN comment="kyoceranetdev, KyoceraNetDev"
-
 add chain=forward action=accept protocol=tcp dst-port=1064 in-interface-list=LAN comment="jstel, JSTEL"
-
 add chain=forward action=accept protocol=tcp dst-port=1065 in-interface-list=LAN comment="syscomlan, SYSCOMLAN"
-
 add chain=forward action=accept protocol=tcp dst-port=1066 in-interface-list=LAN comment="fpo-fns, FPO-FNS"
-
 add chain=forward action=accept protocol=tcp dst-port=1067 in-interface-list=LAN comment="instl-boots, instl_boots, Installation Bootstrap Proto. Serv."
 add chain=forward action=accept protocol=udp dst-port=1067 in-interface-list=LAN comment="instl-boots, instl_boots, Installation Bootstrap Proto. Serv."
 add chain=forward action=accept protocol=tcp dst-port=1068 in-interface-list=LAN comment="instl-bootc, instl_bootc, Installation Bootstrap Proto. Cli."
-
 add chain=forward action=accept protocol=tcp dst-port=1069 in-interface-list=LAN comment="cognex-insight, COGNEX-INSIGHT"
-
 add chain=forward action=accept protocol=tcp dst-port=1070 in-interface-list=LAN comment="gmrupdateserv, GMRUpdateSERV"
-
 add chain=forward action=accept protocol=tcp dst-port=1071 in-interface-list=LAN comment="bsquare-voip, BSQUARE-VOIP"
-
 add chain=forward action=accept protocol=tcp dst-port=1072 in-interface-list=LAN comment="cardax, CARDAX"
-
 add chain=forward action=accept protocol=tcp dst-port=1073 in-interface-list=LAN comment="bridgecontrol, Bridge Control"
-
 add chain=forward action=accept protocol=tcp dst-port=1074 in-interface-list=LAN comment="warmspotMgmt, Warmspot Management Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=1075 in-interface-list=LAN comment="rdrmshc, RDRMSHC"
-
 add chain=forward action=accept protocol=tcp dst-port=1076 in-interface-list=LAN comment="dab-sti-c, DAB STI-C"
-
 add chain=forward action=accept protocol=tcp dst-port=1077 in-interface-list=LAN comment="imgames, IMGames"
-
 add chain=forward action=accept protocol=tcp dst-port=1078 in-interface-list=LAN comment="avocent-proxy, Avocent Proxy Protocol"
-
 add chain=forward action=accept protocol=tcp dst-port=1079 in-interface-list=LAN comment="asprovatalk, ASPROVATalk"
-
 add chain=forward action=accept protocol=tcp dst-port=1080 in-interface-list=LAN comment="socks, Socks"
-
 add chain=forward action=accept protocol=tcp dst-port=1081 in-interface-list=LAN comment="pvuniwien, PVUNIWIEN"
-
 add chain=forward action=accept protocol=tcp dst-port=1082 in-interface-list=LAN comment="amt-esd-prot, AMT-ESD-PROT"
-
 add chain=forward action=accept protocol=tcp dst-port=1083 in-interface-list=LAN comment="ansoft-lm-1, Anasoft License Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=1084 in-interface-list=LAN comment="ansoft-lm-2, Anasoft License Manager"
-
 add chain=forward action=accept protocol=tcp dst-port=1085 in-interface-list=LAN comment="webobjects, Web Objects"
-
 add chain=forward action=accept protocol=tcp dst-port=1086 in-interface-list=LAN comment="cplscrambler-lg, CPL Scrambler Logging"
-
 add chain=forward action=accept protocol=tcp dst-port=1087 in-interface-list=LAN comment="cplscrambler-in, CPL Scrambler Internal"
-
 add chain=forward action=accept protocol=tcp dst-port=1088 in-interface-list=LAN comment="cplscrambler-al, CPL Scrambler Alarm Log"
 
 add chain=forward action=accept protocol=tcp dst-port=1089 in-interface-list=LAN comment="ff-annunc, FF Annunciation"
