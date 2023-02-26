@@ -12120,11 +12120,12 @@ mindprint          8033        tcp    MindPrint                    [Larry_Tusoni
 mindprint          8033        udp    MindPrint                    [Larry_Tusoni]                                        [Larry_Tusoni]
 vantronix-mgmt     8034        tcp    .vantronix Management        [Reyk_Floeter]                                        [Reyk_Floeter]                                            2008-02-27
 vantronix-mgmt     8034        udp    .vantronix Management        [Reyk_Floeter]                                        [Reyk_Floeter]                                            2008-02-27
-                 8035-8039            Unassigned
-ampify             8040        tcp    Ampify Messaging Protocol    [Tav_Espian]                                          [Tav_Espian]                                              2010-08-10
-ampify             8040        udp    Ampify Messaging Protocol    [Tav_Espian]                                          [Tav_Espian]                                              2010-08-10
-
-
+add chain=forward action=accept protocol=tcp dst-port=8034 in-interface-list=LAN comment="vantronix-mgmt, vantronix Management"
+add chain=forward action=accept protocol=udp dst-port=8035-8039 in-interface-list=LAN comment="vantronix-mgmt, vantronix Management"
+add chain=forward action=drop protocol=tcp dst-port=8035-8039 in-interface-list=LAN comment="Unassigned"		 
+add chain=forward action=drop protocol=udp dst-port=8035-8039 in-interface-list=LAN comment="Unassigned"
+add chain=forward action=accept protocol=tcp dst-port=8040 in-interface-list=LAN comment="ampify, Ampify Messaging Protocol"
+add chain=forward action=accept protocol=udp dst-port=8040 in-interface-list=LAN comment="ampify, Ampify Messaging Protocol"
 add chain=forward action=accept protocol=tcp dst-port=8041 in-interface-list=LAN comment="enguity-xccetp, Xcorpeon ASIC Carrier Ethernet Transport"
 add chain=forward action=accept protocol=udp dst-port=8041 in-interface-list=LAN comment="enguity-xccetp, Xcorpeon ASIC Carrier Ethernet Transport"
 add chain=forward action=accept protocol=tcp dst-port=8042 in-interface-list=LAN comment="fs-agent, FireScope Agent"
