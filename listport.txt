@@ -11873,25 +11873,23 @@ nvme-disc          8009        tcp    NVMe over Fabrics Discovery  [NVM_Express_
                    8009        udp    Reserved
                    8010               Reserved                                                                                                                                                  2018-01-09                                                           yes
                  8011-8014            Unassigned
-cfg-cloud          8015        tcp    Configuration Cloud Service  [admin_at_cfg_cloud]                                  [Goksel_Darcan]                                           2019-01-09
-                   8015        udp    Reserved
-ads-s              8016        tcp    Beckhoff Automation Device   [Beckhoff_Automation_GmbH_Co_KG]                      [Henning_Mersch_2]                                        2019-02-28
-                                      Specification
-                   8016        udp    Reserved
-                 8017-8018            Unassigned
-qbdb               8019        tcp    QB DB Dynamic Port           [Sridhar_Krishnamurth]                                [Sridhar_Krishnamurth]                                    2008-02-15
-qbdb               8019        udp    QB DB Dynamic Port           [Sridhar_Krishnamurth]                                [Sridhar_Krishnamurth]                                    2008-02-15
-intu-ec-svcdisc    8020        tcp    Intuit Entitlement Service   [Daniel_C_McGloin]                                    [Daniel_C_McGloin]                                        2005-05
-                                      and Discovery
-intu-ec-svcdisc    8020        udp    Intuit Entitlement Service   [Daniel_C_McGloin]                                    [Daniel_C_McGloin]                                        2005-05
-                                      and Discovery
-intu-ec-client     8021        tcp    Intuit Entitlement Client    [Daniel_C_McGloin]                                    [Daniel_C_McGloin]                                        2005-05
-intu-ec-client     8021        udp    Intuit Entitlement Client    [Daniel_C_McGloin]                                    [Daniel_C_McGloin]                                        2005-05
-oa-system          8022        tcp    oa-system                    [Marie_France_Dubreui]                                [Marie_France_Dubreui]
-oa-system          8022        udp    oa-system                    [Marie_France_Dubreui]                                [Marie_France_Dubreui]
-arca-api           8023        tcp    ARCATrust vault API          [ARCATrust_SA]                                        [Yacince_Felk]                                            2018-07-05
-arca-api           8023        udp    ARCATrust vault API          [ARCATrust_SA]                                        [Yacince_Felk]                                            2018-07-05
 
+add chain=forward action=accept protocol=tcp dst-port=8015 in-interface-list=LAN comment="cfg-cloud, Configuration Cloud Service"		 
+add chain=forward action=drop protocol=udp dst-port=8015 in-interface-list=LAN comment="Reserved"      
+add chain=forward action=accept protocol=tcp dst-port=8016 in-interface-list=LAN comment="ads-s, Beckhoff Automation Device Specification"		 
+add chain=forward action=drop protocol=udp dst-port=8016 in-interface-list=LAN comment="Reserved"   
+add chain=forward action=drop protocol=tcp dst-port=8017-8018 in-interface-list=LAN comment="Unassigned"		 
+add chain=forward action=drop protocol=udp dst-port=8017-8018 in-interface-list=LAN comment="Unassigned"
+add chain=forward action=accept protocol=tcp dst-port=8019 in-interface-list=LAN comment="qbdb, QB DB Dynamic Port"
+add chain=forward action=accept protocol=udp dst-port=8019 in-interface-list=LAN comment="qbdb, QB DB Dynamic Port" 
+add chain=forward action=accept protocol=tcp dst-port=8020 in-interface-list=LAN comment="intu-ec-client, Intuit Entitlement Service and Discovery"
+add chain=forward action=accept protocol=udp dst-port=8020 in-interface-list=LAN comment="intu-ec-client, Intuit Entitlement Service and Discovery"   
+add chain=forward action=accept protocol=tcp dst-port=8021 in-interface-list=LAN comment="intu-ec-client, Intuit Entitlement Client"
+add chain=forward action=accept protocol=udp dst-port=8021 in-interface-list=LAN comment="intu-ec-client, Intuit Entitlement Client"
+add chain=forward action=accept protocol=tcp dst-port=8022 in-interface-list=LAN comment="oa-system, oa-system"
+add chain=forward action=accept protocol=udp dst-port=8022 in-interface-list=LAN comment="oa-system, oa-system"
+add chain=forward action=accept protocol=tcp dst-port=8023 in-interface-list=LAN comment="arca-api, ARCATrust vault API"
+add chain=forward action=accept protocol=udp dst-port=8023 in-interface-list=LAN comment="arca-api, ARCATrust vault API"
 add chain=forward action=drop protocol=tcp dst-port=8024 in-interface-list=LAN comment="Unassigned"		 
 add chain=forward action=drop protocol=udp dst-port=8024 in-interface-list=LAN comment="Unassigned"
 add chain=forward action=accept protocol=tcp dst-port=8025 in-interface-list=LAN comment="ca-audit-da, CA Audit Distribution Agent"
