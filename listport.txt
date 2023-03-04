@@ -1494,7 +1494,7 @@ add chain=forward action=accept protocol=tcp dst-port=1219 in-interface-list=LAN
 add chain=forward action=accept protocol=tcp dst-port=1220 in-interface-list=LAN comment="qt-serveradmin, QT SERVER ADMIN"
 
 add chain=forward action=accept protocol=tcp dst-port=1221 in-interface-list=LAN comment="sweetware-apps, SweetWARE Apps"
-
+add chain=forward action=accept protocol=udp dst-port=1221 in-interface-list=LAN comment="sweetware-apps, SweetWARE Apps"
 add chain=forward action=accept protocol=tcp dst-port=1222 in-interface-list=LAN comment="nerv, SNI R&D network"
 
 add chain=forward action=accept protocol=tcp dst-port=1223 in-interface-list=LAN comment="tgp, TrulyGlobal Protocol"
