@@ -11816,23 +11816,19 @@ micromuse-ncps     7979        tcp    Micromuse-ncps               [Hing_Wing_To
 micromuse-ncps     7979        udp    Micromuse-ncps               [Hing_Wing_To]                                        [Hing_Wing_To]
 quest-vista        7980        tcp    Quest Vista                  [Preston_Bannister]                                   [Preston_Bannister]
 quest-vista        7980        udp    Quest Vista                  [Preston_Bannister]                                   [Preston_Bannister]
-sossd-collect      7981        tcp    Spotlight on SQL Server      [Rob_Griffin_2]                                       [Rob_Griffin_2]                                           2010-08-30
-                                      Desktop Collect
-                   7981        udp    Reserved
-sossd-agent        7982        tcp    Spotlight on SQL Server      [Rob_Griffin_2]                                       [Rob_Griffin_2]                                           2010-09-13
-                                      Desktop Agent
-sossd-disc         7982        udp    Spotlight on SQL Server      [Rob_Griffin_2]                                       [Rob_Griffin_2]                                           2010-09-13
-                                      Desktop Agent Discovery
-                 7983-7997            Unassigned
-pushns             7997        tcp    PUSH Notification Service    [Tristan_Seifert]                                     [Tristan_Seifert]                                         2011-01-31
-                   7997        udp    Reserved
-                   7998        tcp    Reserved
-usicontentpush     7998        udp    USI Content Push Service     [Prakash_Iyer]                                        [Prakash_Iyer]                                            2009-08-10
-irdmi2             7999        tcp    iRDMI2
-irdmi2             7999        udp    iRDMI2
-
-
-                                                                                                                                
+                        
+add chain=forward action=accept protocol=tcp dst-port=7981 in-interface-list=LAN comment="sossd-collect, Spotlight on SQL Server"
+add chain=forward action=drop protocol=udp dst-port=7981 in-interface-list=LAN comment="Reserved" 
+add chain=forward action=accept protocol=tcp dst-port=7982 in-interface-list=LAN comment="sossd-agent, Spotlight on SQL Server Desktop Desktop Agent"		   
+add chain=forward action=accept protocol=udp dst-port=7982 in-interface-list=LAN comment="sossd-disc, Spotlight on SQL Server Desktop Agent Discovery"
+add chain=forward action=drop protocol=tcp dst-port=7983-7997 in-interface-list=LAN comment="Unassigned"
+add chain=forward action=drop protocol=udp dst-port=7983-7997 in-interface-list=LAN comment="Unassigned"	
+add chain=forward action=accept protocol=tcp dst-port=7997 in-interface-list=LAN comment="pushns, PUSH Notification Service"
+add chain=forward action=drop protocol=udp dst-port=7997 in-interface-list=LAN comment="Reserved"		   
+add chain=forward action=drop protocol=tcp dst-port=7998 in-interface-list=LAN comment="Reserved"
+add chain=forward action=accept protocol=udp dst-port=7998 in-interface-list=LAN comment="usicontentpush, iRDMI"
+add chain=forward action=accept protocol=tcp dst-port=7999 in-interface-list=LAN comment="irdmi2, iRDMI2"
+add chain=forward action=accept protocol=udp dst-port=7999 in-interface-list=LAN comment="irdmi2, iRDMI2"     
 add chain=forward action=accept protocol=tcp dst-port=8000 in-interface-list=LAN comment="irdmi, iRDMI"
 add chain=forward action=accept protocol=udp dst-port=8000 in-interface-list=LAN comment="irdmi, iRDMI"
 add chain=forward action=accept protocol=tcp dst-port=8001 in-interface-list=LAN comment="vcom-tunnel, VCOM Tunnel"
@@ -12164,7 +12160,7 @@ add chain=forward action=accept protocol=udp dst-port=8383 in-interface-list=LAN
 add chain=forward action=accept protocol=tcp dst-port=8384 in-interface-list=LAN comment="marathontp, Marathon Transport Protocol"
 add chain=forward action=accept protocol=udp dst-port=8384 in-interface-list=LAN comment="Reserved"
 add chain=forward action=accept protocol=tcp dst-port=8385-8399 in-interface-list=LAN comment="Unassigned"
-add chain=forward action=accept protocol=udp dst-port=8385-8399 in-interface-list=LAN comment="Unassigned"									  
+add chain=forward action=accept protocol=udp dst-port=8385-8399 in-interface-list=LAN comment="Unassigned"							  
 add chain=forward action=accept protocol=tcp dst-port=8400 in-interface-list=LAN comment="cvd"
 add chain=forward action=accept protocol=udp dst-port=8400 in-interface-list=LAN comment="cvd"
 add chain=forward action=accept protocol=tcp dst-port=8401 in-interface-list=LAN comment="sabarsd"
